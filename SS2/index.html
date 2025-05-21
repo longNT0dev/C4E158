@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+
+
+      * {
+        font-family: "Roboto Condensed", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 500;
+        font-style: normal;
+      }
+      /* Internal Style */
+      /* Selector: Tên thẻ, tên class, tên id */
+
+      /* C1: Tên thẻ */
+      /* h1 {
+            font-size: 12px;
+            color: red;
+        } */
+
+      /* C2: Tên Id */
+      /* #title {
+            font-size: 12px;
+            color: red;
+        } */
+
+      /* C3: Tên class */
+      /* .round-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+        } */
+
+      /* .text-color {
+            color: red!important;
+        }
+
+        .text-color-2 {
+            color: blue;
+            text-align: center;
+            text-transform: uppercase;
+            cursor: pointer;
+        } */
+
+      .font-weight-300 {
+        font-weight: 300;
+      }
+
+      /* .new-font-style {
+       
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <p id="text-color" class="text-color text-color-2">Tìm hiểu về thứ tự ưu tiên trong CSS</p> -->
+
+    <!-- key: value -->
+    <!-- <h1 id="title" class="title-1">Buổi học về CSS - dùng để style cho trang web đẹp hơn</h1>
+    <h1>Buổi học về CSS - dùng để style cho trang web đẹp hơn</h1> -->
+    <!-- <h1 style="font-size: 12px; color: red;">Buổi học về CSS - dùng để style cho trang web đẹp hơn</h1> -->
+    <!-- <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-con-cho-51.jpg" class="round-img"> -->
+    <!-- <img src="https://hoanghamobile.com/tin-tuc/wp-content/uploads/2024/04/anh-con-cho-51.jpg" class="round-img-2"> -->
+
+    <!-- <div style="background-color: red; font-size: 30px">
+      Đổi màu nền background
+    </div>
+
+    <h1>Chữ trong thẻ h1 ban đâu</h1>
+    <h1 class="font-weight-300 new-font-style">Chữ trong thẻ h1 sau khi style</h1>
+
+    <p style="text-align: right;">Đoạn văn bản bị chỉnh sửa</p> -->
+
+    <div class="word-wrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde, harum aliquam atque ipsa explicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicabo odit incidunt, vitae quo, voluptatibus sit earum illo vel. Error distinctio voluptatum mollitia illum a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde, harum aliquam atque ipsa explicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicabo odit incidunt, vitae quo, voluptatibus sit earum illo vel. Error distinctio voluptatum mollitia illum a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde, harum aliquam atque ipsa explicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicabo odit incidunt, vitae quo, voluptatibus sit earum illo vel. Error distinctio voluptatum mollitia illum a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde, harum aliquam atque ipsa explicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicabo odit incidunt, vitae quo, voluptatibus sit earum illo vel. Error distinctio voluptatum mollitia illum a.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas unde, harum aliquam atque ipsa explicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicaboexplicabo odit incidunt, vitae quo, voluptatibus sit earum illo vel. Error distinctio voluptatum mollitia illum a.
+    </div>
+
+    <!-- Với 4 thuộc tính đầu => Inline Style
+    Với 3 thuộc tính tiếp theo => Internal Style (mỗi selector 1 thuộc tính)
+    Các thuộc tính còn lại => External Style
+    Một số thuộc tính liên quan tới chữ
+        color: Đổi màu chữ
+        background-color: Đổi màu nền
+        font-size: Đổi kích cỡ chữ
+        font-weight: Độ đậm nhạt của chữ
+        font-family: Thay đổi kiểu chữ => Google Font
+        text-align: Thay đổi vị trí của chữ => left, right, center
+        word-wrap: Xuống dòng vơi những từ quá dài vượt quá phạm vi dòng => Truncate text
+    Một số thuộc tính khác
+        border: Tạo đường bao quanh cho thẻ (Độ dày viền - Kiểu viền - Màu viền)
+        border-radius: Bo tròn viền
+        width: Thay đổi chiêu rộng của thẻ
+        height: Thay đổi chiều cao của thẻ
+        line-height: Thay đổi độ giãn dòng
+        min-width: Thay đổi chiêu rộng tối thiểu của thẻ
+        max-width: Thay đổi chiêu rộng tối đa của thẻ
+        min-height: Thay đổi chiêu cao tối thiểu của thẻ
+        max-height: Thay đổi chiêu cao tối thiểu của thẻ
+        overflow: Chỉ định dữ liệu khi bị tràn khỏi chiều rộng thì có hành vi thế nào
+
+        background-image
+        rotate
+        text-decoration
+        transform -->
+  </body>
+</html>

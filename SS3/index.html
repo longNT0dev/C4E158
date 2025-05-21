@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        height: 8000px;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 1px solid black;
+      }
+
+      .parent {
+        width: 700px;
+        height: 700px;
+        margin: 80px auto;
+        position: relative;
+      }
+
+      .box-1 {
+        background-color: red;
+        /* padding: 8px 0 0 8px; */
+        /* margin: 40px; */
+        /* Dịch chuyển thẻ đi 1 đoạn so với vị trí ban đầu */
+        /* position: relative;
+        top: 200px;
+        right: 80px; */
+        /* position: absolute;
+        top: 0; */
+      }
+
+      .box-2 {
+        background-color: palegreen;
+        position: absolute;
+        left: 120px;
+        z-index: -1;
+        /* margin-top: 12px; */
+      }
+
+      .box-3 {
+        background-color: blueviolet;
+      }
+
+      .header {
+        background-color: bisque;
+        width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        /* position: sticky;
+        top: 100px; */
+      }
+
+      /* .header-1 {
+        margin: 20px;
+        background-color: bisque;
+        width: 100%;
+        height: 100px;
+        position: sticky;
+        top: 100px;
+      } */
+    </style>
+  </head>
+  <body>
+    <!-- <div class="header-1">Đây là 1 thanh navbar</div> -->
+
+    <div class="header">Đây là 1 thanh navbar</div>
+    <!-- <div class="box parent">
+      <div class="box box-1">Đây là nội dung của thẻ 1!</div>
+    </div> -->
+
+    <!-- <div class="box box-2">Đây là nội dung của thẻ 2!</div> -->
+
+    <!-- <div class="box box-1">1</div>
+    <div class="box box-2">2</div>
+    <div class="box box-3">3</div> -->
+  </body>
+</html>
