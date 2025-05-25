@@ -4,71 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-      }
-
-      body {
-        width: 100vw;
-        height: 100vh;
-      }
-
-      .container {
-        width: 100%;
-        height: 100%;
-        background-color: white;
-        position: relative;
-      }
-
-      .bg-black {
-        width: 100%;
-        height: 40%;
-        background-color: black;
-        position: absolute;
-        bottom: 0;
-      }
-
-      .box-center-container {
-        width: 100%;
-        height: 188px;
-        margin: auto;
-      }
-
-      .box-center {
-        width: 700px;
-        height: 94px;
-        background-color: #ecdac4;
-        border-radius: 80px;
-        margin: auto;
-        position: relative;
-        top: -48px;
-        /* position: absolute;
-        left: calc(calc(100% - 868px) * 0.5); */
-      }
-
-      .image-container {
-        text-align: right;
-        position: relative;
-        padding-top: 8px;
-      }
-
-      .small-picture-position {
-        position: relative;
-        right: 162px;
-        top: 24px;
-      }
-
-
-
-
-      /* Style dùng chung */
-      .round-image {
-        border-radius: 50%;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div class="container">
@@ -89,6 +25,21 @@
       <div class="bg-black">
         <div class="box-center"></div>
       </div>
+    </div>
+
+    <div class="overlay">
+      <form>
+        <div class="form-data">
+          <div class="avatar"></div>
+
+          <div class="content-container">
+            <h2>Send feedback!</h2>
+            <p style="color: #54595E99;">Leave your feedback here</p>
+            <input type="text" placeholder="Type text..." class="feedback" />
+            <button class="feedback-btn">Yeah, thanks!</button>
+          </div>
+        </div>
+      </form>
     </div>
   </body>
 </html>
