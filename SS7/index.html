@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //   let isRaining = false;
+
+      //   if (isRaining) {
+      //     console.log("Ngoài trời mưa, ở nhà!");
+      //   } else {
+      //     console.log("Ngoài trời ráo, ra ngoài chơi!");
+      //   }
+
+      //   // Truthy (giá trị luôn đúng)
+      //   // Falsy (giá trị luôn sai): null, undefined, "", 0
+
+      //   // Kiểm tra giá trị người dùng nhập vào có hay không
+      //   let userInput = prompt("Dữ liệu đầu vào")
+
+      //   if(userInput) {
+      //     // Xử lý giá trị input ở đây
+      //   } else {
+      //     // NGười dùng không nhập vào input
+      //   }
+
+      //   if(!userInput) {
+      //     // Báo lỗi trong đây và kết thúc
+      //   }
+      // Đây là trường hợp tất cả dữ liệu đầu vào đều chính xác => Sử dụng
+
+      //   let age = prompt("Hãy nhập vào số tuổi của bạn");
+
+      //   if(age >= 18) {
+      //     console.log("Bạn đủ tuổi, chào mừng bạn tới với trang web")
+      //   } else {
+      //     console.log("Bạn chưa đủ tuổi, quay lại sau nhé")
+      //   }
+
+      // Kiểm tra 1 số người dùng nhập vào là số dương hay số âm
+      //   let number = prompt("Hãy nhập vào số muốn kiểm tra");
+
+      //   if (number > 0) {
+      //     console.log(`Số ${number} là số dương`);
+      //   } else if (number == 0) {
+      //     console.log("Số 0 không phải là số dương cũng không phải là số âm");
+      //   } else if (number < 0) {
+      //     console.log(`Số ${number} là số âm`);
+      //   } else if (isNaN(number)) {
+      //     console.log(`Giá trị nhập vào không phải là số`);
+      //   }
+      //   else if (number == 0) {
+      //     console.log("Số 0 không phải là số dương cũng không phải là số âm");
+      //   }
+      //   else if (number == 0) {
+      //     console.log("Số 0 không phải là số dương cũng không phải là số âm");
+      //   }
+      //   else if (number == 0) {
+      //     console.log("Số 0 không phải là số dương cũng không phải là số âm");
+      //   }
+      //   else {
+      //     console.log("Ghi lại dữ liệu đầu vào từ người dùng");
+      //     console.log(`Lỗi không xác định`); // Tất cả trường hợp còn lại
+      //   }
+
+      //   let number1 = +prompt("Nhâp vào số đầu tiên");
+      //   let number2 = +prompt("Nhâp vào số thứ hai");
+
+      //   console.log(
+      //     `Tổng của 2 số ${number1} và ${number2} là: ${number1 + number2}`
+      //   );
+
+      // switch(bieuthuc) {
+      //     case 1:
+      //         break;
+      //     case 2:
+      //         break;
+      //     default:
+      //         break
+      // }
+      //   const age = 18;
+
+      //   if (age >= 18) {
+      //     console.log("You are an adult");
+      //   } else {
+      //     console.log("You are a minor");
+      //   }
+      //   age >= 18 ? console.log("You are an adult") : console.log("You are a minor")
+
+      //   let isRaining = true;
+      //   let hasUmbrella = true;
+      //   if (isRaining && hasUmbrella) {
+      //     console.log("Tôi khả năng cao không bị ướt dù trời mưa");
+      //   } else if (isRaining && !hasUmbrella) {
+      //     console.log("Tôi khả năng cao bị ướt do không có ô");
+      //   }
+
+      //   if (isRaining) {
+      //     if (hasUmbrella) {
+      //       console.log("Tôi khả năng cao không bị ướt dù trời mưa");
+      //     } else {
+      //       console.log("Tôi khả năng cao bị ướt do không có ô");
+      //     }
+      //   }
+
+      //   for (let index = 1; index <= 1000; index++) {
+      //     console.log(`Anh xin lỗi em`);
+      //   }
+
+      //   let number = prompt("Nhập vào 1 số");
+      //   while (true) {
+      //     console.log(`Anh xin lỗi em`);
+
+      //     if (isNaN(number)) {
+      //       number = prompt("Nhập vào 1 số");
+      //     } else {
+      //         break
+      //     }
+      //   }
+
+      // do {
+      //     // Chạy ít nhất 1 lần
+      // } while()
+
+      for (let i = 0; i < 20; i++) {
+        if (i > 10 && i < 15) {
+          break; // Kết thúc hẳn vòng lặp for
+        }
+        console.log(`BREAK: Giá trị của i là: ${i}`);
+      }
+
+      for (let i = 0; i < 20; i++) {
+        if (i > 10 && i < 15) {
+          continue; // Bỏ qua các giá trị thỏa mãn điều kiện
+        }
+        console.log(`CONTINUE: Giá trị của i là: ${i}`);
+      }
+    </script>
+  </body>
+</html>
