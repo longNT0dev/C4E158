@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let names = ["Long", "Tuấn", "Nam", "Sơn", "Lâm"] // Đây chính là 1 mảng
+
+      // Sử dụng mảng thông qua vị trí (index)
+      // console.log(names[2])
+
+      // Cập nhật giá trị của mảng
+      // names[2] = "Nam sau khi đổi tên"
+      // console.log(names[2])
+      // Hello Long, Hello Tuấn,....
+
+      // for(let i = 0; i <= names.length - 1; i++) {
+      //     console.log(`Hello ${names[i]}`)
+      // }
+
+      // Cho 1 mảng sản phẩm (khăn tắm, dầu gội, thước kẻ,....) và 1 mảng giá tiền của sản phẩm đó => Hiển thị tên sản phẩm + giá
+      // Sản phẩm 1 - XXXX Vnd
+      // let products = ["Khăn tắm", "Dầu gội"]
+      // let prices = [50000, 250000]
+
+      // for(let i = 0; i <= 1; i++) {
+      //     document.writeln(`<h1>Sản phẩm ${products[i]} có giá ${prices[i]}</h1>`)
+      // }
+
+      // CRUD - Create, Read, Update, Detete
+
+      //   const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+      //   const newValue = "MindX";
+      //   const insertIndex = +prompt("Nhập vào vị trí muốn chèn");
+
+      //   // thực hiện dịch chuyển từ vị trí cuối cùng của mảng tới vị trí cần chèn
+      //   for (let i = names.length - 1; i >= insertIndex - 1; i--) {
+      //     names[i + 1] = names[i];
+      //   }
+      //   names[insertIndex - 1] = newValue;
+
+      //   console.log(names);
+
+      // let number = +prompt("Nhập vào số muốn chuyển sang dạng nhị phân")
+      // let result = ""
+      // while(number > 0) {
+      //     // Chia lấy dư nhận được 0 hoặc 1
+      //     let mod = number % 2
+
+      //     result = mod + result
+
+      //     number = Math.floor(number / 2)
+      // }
+
+      // console.log(result)
+
+      // câu 1
+      const names = ["Alice", "Bob", "Charlie", "David", "Eve"];
+
+      console.log(names[0]);
+      const lastIndex = names.length - 1;
+      console.log(names[lastIndex]);
+
+      // Câu 2
+      console.log("Giá trị của mảng trước khi thay đổi", names)
+
+      names[2] = "Mary";
+
+      console.log("Giá trị của mảng sau khi thay đổi", names)
+
+      // Câu 3
+      for(let i = 0; i< names.length; i++) {
+        console.log(names[i])
+      }
+    </script>
+  </body>
+</html>

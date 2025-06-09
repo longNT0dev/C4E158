@@ -55,11 +55,21 @@
       // 2x1...2x10
       // 3x1...3x10
 
-    //   for (let i = 2; i <= 9; i++) {
-    //     for (let j = 1; j <= 10; j++) {
-    //         console.log(`${i}x${j}`)
-    //     }
-    //   }
+      // for (let i = 1; i <= 9; i++) {
+      //   for (let j = 1; j <= 10; j++) {
+      //     for(let k = 1; k <= 5; k++) {
+
+      //     }
+      //       // console.log(`${i}x${j}`)
+      //   }
+      // }
+
+      // Số lần chạy vòng lặp ngoài là 9 * Số lần chạy vòng lặp trong là 10  = 90 => Tránh sử dụng quá nhiều vòng lặp for lồng nhau 
+
+      // i = 2 (i <= 9) => 1 => 10 
+      // i = 3 (i <= 9) => 1 => 10 
+      // ......
+      // i = 10 (i <= 9) => Kết thúc do 10 <= 9
     </script>
   </body>
 </html>
