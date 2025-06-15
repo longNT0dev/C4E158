@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="section-1">
+        <h1>Thẻ 1</h1>
+    </div>
+    <div class="section-2">
+        <h1>Thẻ 2</h1>
+    </div>
+
+
+    <script>
+      // // CRUD
+
+      // // Create
+      // let student = {
+      //     name: "Long",
+      //     age: 50,
+      //     school: "BKHN"
+      // }
+
+      // // Read
+      // // student.age
+      // let key = "age"
+      // // student[key] // Truyền biến vào được
+      // console.log(student.age)
+      // console.log(student[key])
+
+      // // Update
+      // student.age = 18
+
+      // console.log(student.age)
+
+      // // Delete
+      // delete student.age
+      // console.log(student)
+
+      // for(let key in student) {
+      //     console.log(key)
+
+      //     console.log(`Giá trị của key ${key} là ${student[key]}`)
+      // }
+
+      // Tham chiếu và tham trị
+      // Kiểu dữ liệu: number, string, boolean, null, undefined, array, object
+      // Kiểu dữ liệu nguyên thủy: number, string, boolean
+      // Kiểu dữ liệu phức: array, object
+
+      // let number1 = {
+      //     username: "Long",
+      //     age: 18
+      // }
+      // let number2 = {
+      //     ...number1
+      // }
+
+      // number1.school = "BKHN"
+
+      // console.log(number1)
+      // console.log(number2)
+
+      // Clone - Tạo bản sao dữ liệu => Thao tác chỉnh sửa trên bản sao dữ liệu này thôi
+      // Spread Operator: ...
+      // let array1 = [1,2,3,4,5]
+      // let array2 = [...array1]
+
+      // Deep copy
+      // let arrayOfObject1 = [
+      //     {
+      //         name: "Long",
+      //         age: 20
+      //     }
+      // ]
+
+      // let arrayOfObject2 = [...arrayOfObject1]
+      // arrayOfObject1[0].school = "BKHN"
+      // console.log(arrayOfObject1)
+      // console.log(arrayOfObject2)
+
+    //   for(let i = i< arrayOfObject1.length; )
+
+    //   const techProducts = [
+    //     {
+    //       name: "Laptop Dell XPS 13",
+    //       price: 1500,
+    //       description:
+    //         "Laptop mỏng nhẹ với màn hình 13.4 inch, vi xử lý Intel Core i7 thế hệ 11 và ổ cứng SSD 512GB.",
+    //       quantity: 10,
+    //     },
+    //     {
+    //       name: "Apple iPhone 13 Pro",
+    //       price: 1200,
+    //       description:
+    //         "Điện thoại iPhone 13 Pro với màn hình Super Retina XDR 6.1 inch, chip A15 Bionic và hệ thống camera ba ống kính.",
+    //       quantity: 25,
+    //     },
+    //     {
+    //       name: "Tai nghe Sony WH-1000XM4",
+    //       price: 350,
+    //       description:
+    //         "Tai nghe chống ồn chủ động cao cấp từ Sony, với thời lượng pin lên đến 30 giờ và khả năng kết nối không dây Bluetooth.",
+    //       quantity: 15,
+    //     },
+    //     {
+    //       name: "Apple Watch Series 7",
+    //       price: 500,
+    //       description:
+    //         "Đồng hồ thông minh với màn hình lớn hơn, chống nước và theo dõi sức khỏe toàn diện.",
+    //       quantity: 30,
+    //     },
+    //     {
+    //       name: "Máy tính bảng Samsung Galaxy Tab S7",
+    //       price: 700,
+    //       description:
+    //         "Máy tính bảng với màn hình 11 inch, hỗ trợ bút S Pen, chạy hệ điều hành Android 11.",
+    //       quantity: 20,
+    //     },
+    //     {
+    //       name: "Loa thông minh Google Nest Audio",
+    //       price: 100,
+    //       description:
+    //         "Loa thông minh tích hợp trợ lý ảo Google Assistant, âm thanh sống động và kết nối với hệ thống nhà thông minh.",
+    //       quantity: 50,
+    //     },
+    //     {
+    //       name: "Camera GoPro HERO9",
+    //       price: 450,
+    //       description:
+    //         "Camera hành trình GoPro HERO9 với khả năng quay video 5K, chống nước và ổn định hình ảnh mạnh mẽ.",
+    //       quantity: 12,
+    //     },
+    //     {
+    //       name: "Bàn phím cơ Keychron K2",
+    //       price: 80,
+    //       description:
+    //         "Bàn phím cơ không dây với layout 75%, hỗ trợ kết nối đa thiết bị và các phím chuyển đổi Mac/Windows.",
+    //       quantity: 40,
+    //     },
+    //     {
+    //       name: "Bàn phím cơ Keychron K3",
+    //       price: 80,
+    //       description:
+    //         "Bàn phím cơ không dây với layout 75%, hỗ trợ kết nối đa thiết bị và các phím chuyển đổi Mac/Windows.",
+    //       quantity: 40,
+    //     },
+    //   ];
+
+    //   for(let i = 0; i< techProducts.length; i++) {
+    //     let techProduct = techProducts[i]
+
+
+    //     document.writeln(`Sản phẩm ${techProduct.name} có giá ${techProduct.price}<br>
+    //     <p>Mô tả sản phẩm ${techProduct.description}</p>
+    //     <p>Số lượng còn lại: ${techProduct.quantity}</p>`)
+    //   }
+
+    // 1. Cùng 1 trang Home có nhiều phần (mỗi người đảm nhiệm 1 phần)
+    // 2. <div class="section-1"></div>
+    // 3. .section-1
+    </script>
+  </body>
+</html>

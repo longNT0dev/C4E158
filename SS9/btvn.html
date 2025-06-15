@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Câu 7
+      // const numbers = [1, 2, 3, 4, 2, 1, 3, 2, 4, 2];
+      // const targetCounting = +Number(prompt("Nhập số muốn đếm"));
+
+      // let count = 0
+      // for(let i = 0; i < numbers.length; i++) {
+      //     if(numbers[i] == targetCounting) {
+      //         count += 1
+      //     }
+      // }
+
+      // console.log(count)
+
+      // Câu 8
+      //   const numbers = [5, 2, 9, 3, 7, 11, 8];
+
+      //   if (numbers.length > 0) {
+      //     let max = numbers[0];
+      //     for (let i = 1; i < numbers.length; i++) {
+      //         if(numbers[i] > max) {
+      //             max = numbers[i]
+      //         }
+      //     }
+
+      //     console.log(`Giá trị lớn nhất trong mảng là ${max}`)
+      //   } else {
+      //     console.log("Mảng không có giá trị nào");
+      //   }
+
+      // Câu 9
+      //   const array = [1, 2, 3, 4, 5];
+      //   const tempArr = []
+      //   let tempIndex = 0
+      //   for(let i = array.length - 1; i >= 0; i--) {
+      //     tempArr[tempIndex] = array[i]
+      //     tempIndex += 1
+      //   }
+
+      //   for(let i = 0; i < tempArr.length; i++) {
+      //     array[i] = tempArr[i]
+      //   }
+
+      //   console.log(array)
+
+      // Câu 10
+      //   const duplicatesArray = [1, 2, 2, 3, 4, 4, 5];
+      //   const tempArr = [];
+      //   let tempIndex = 0;
+      //   for (let i = 0; i < duplicatesArray.length; i++) {
+      //     let isExist = false; // Kỹ thuật gán cờ
+      //     // Kiểm tra trong mảng tempArr có tồn tại giá trị đang xét trong mảng duplicatesArray hay không
+      //     for (let j = 0; j < tempArr.length; j++) {
+      //       if (duplicatesArray[i] == tempArr[j]) {
+      //         isExist = true;
+      //         break;
+      //       }
+      //     }
+
+      //     if (!isExist) { // !false = true
+      //       tempArr[tempIndex] = duplicatesArray[i];
+      //       tempIndex += 1;
+      //     }
+      //   }
+
+      //   for (let i = 0; i < duplicatesArray.length; i++) {
+      //     duplicatesArray[i] = tempArr[i];
+      //   }
+
+      //   duplicatesArray.length = tempArr.length
+
+      //   console.log(duplicatesArray);
+
+      // // Câu 1
+      // const student = { name: "John", age: 20 }
+      // student.major = "Computer Science"
+
+      // // Câu 2
+      // const person = { name: "Alice", age: 25, job: "Designer" }
+      // delete person.job
+
+      // // Câu 3
+      // const car = { brand: "Toyota", model: "Camry", year: 2020 }
+      // let count = 0
+      // for(let key in car) {
+      //     count += 1
+      // }
+      // console.log(count)
+
+      // Câu 4: example = [ [1, 2], [3, 4] ] => example[0][1], example[1][1]
+      // const product = { name: "Laptop", price: 1000 }
+      // const array = []
+      // let index = 0
+      // for(let key in product) {
+      //     // Mảng 2 chiều
+      //     array[index] = []
+      //     array[index][0] = key
+      //     array[index][1] = product[key]
+      //     index += 1
+      // }
+
+      // console.log(array)
+
+      // Câu 5
+      // const products = [ { name: "Phone", price: 500 }, { name: "Camera", price: 300 }, { name: "Tablet", price: 700 } ]
+
+      // for(let i = 0; i< products.length; i++) {
+      //     let product = products[i]
+
+      //     if(product.name == "Camera") {
+      //         console.log(product)
+      //         break;
+      //     }
+      // }
+
+      // Câu 6
+    //   const products = [
+    //     { name: "Phone", price: 50 },
+    //     { name: "Camera", price: 300 },
+    //     { name: "Tablet", price: 700 },
+    //   ];
+
+    //   for (let i = 0; i < products.length; i++) {
+    //     let product = products[i];
+
+    //     if (product.price > 100) {
+    //       console.log(product);
+    //     }
+    //   }
+
+    // Câu 8
+    const obj1 = { a: 1, b: 2, c: 2 }
+    const obj2 = { c: 3, d: 4 }
+
+    console.log({...obj2, ...obj1})
+
+
+    </script>
+  </body>
+</html>
