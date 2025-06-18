@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Viết đoạn code để tính tổng 2 số
+      // Cách tạo ra hàm - Từ khóa this
+      // C1: Regular function
+      function regularSum(params1, params2, params3) {
+        //default value
+        let paramsNumber1 = +params1;
+        let paramsNumber2 = +params2;
+        let result;
+        if (Number.isNaN(paramsNumber1)) {
+          alert(`${params1} không phải 1 số`);
+
+          return;
+        } else if (Number.isNaN(paramsNumber2)) {
+          alert(`${params2} không phải 1 số`);
+
+          return;
+        } else {
+          result = paramsNumber1 + paramsNumber2;
+        }
+
+        return result;
+      }
+
+      //   regularSum(x, y) = result
+
+      // C2: Arrow function
+      const arrowSum = (params1, params2) => {
+        let result;
+        if (Number.isNaN(params1)) {
+          console.log(`${params1} không phải 1 số`);
+        } else if (Number.isNaN(params2)) {
+          console.log(`${params2} không phải 1 số`);
+        } else {
+          result = params1 + params2;
+        }
+
+        console.log(result);
+      };
+
+      // Sử dụng hàm: Gọi hàm
+      //   let number1 = prompt("Nhập vào số đầu tiên");
+      //   let number2 = prompt("Nhập vào số thứ hai");
+      //   let sumResult = regularSum(5);
+      //   console.log(sumResult);
+
+      //   // anonymous function
+      //   (() => {
+      //     // Xử lý bên trong hàm
+      //     console.log("Xử lý bên trong hàm anonymous");
+      //   })();
+
+      function regularSumAll(params1, params2, ...rest) {
+        //rest operator
+        console.log(params1, params2, rest);
+      }
+
+      regularSumAll(
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        12,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20
+      );
+    </script>
+  </body>
+</html>
