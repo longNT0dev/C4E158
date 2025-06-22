@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 800px;
+        height: 800px;
+        display: flex;
+        padding: 24px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .item {
+        width: 200px;
+        height: 300px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>Đây là thẻ p1</p>
+    <p>Đây là thẻ p2</p>
+
+    <p class="example">Đây là thẻ có class example1</p>
+    <p class="example">Đây là thẻ có class example2</p>
+
+    <div id="container">
+      <div class="item">Đây là item con</div>
+      Đây là thẻ có id container1
+    </div> -->
+    <!-- <div id="container">Đây là thẻ có id container2</div> -->
+
+    <div id="container"></div>
+
+    <button class="say">Click me to say</button>
+
+    <input type="text" id="username" />
+
+    <script>
+      //   let pTag = document.getElementsByTagName("p"); // Trả về 1 HTMLColection - Array
+
+      //   //   console.log("Đây là thẻ p", pTag);
+
+      //   let pClassTag = document.getElementsByClassName("example"); // Trả về 1 HTMLColection - Array
+
+      //   //   console.log("Đây là thẻ p có class", pClassTag);
+
+      //   console.log("Đây là thẻ div", divTag);
+      //   console.dir(divTag);
+
+      // innerText, innerHTML
+      //   console.log(divTag.innerText);
+      //   console.log(divTag.innerHTML);
+      //   divTag.innerHTML = "<h1>Giá trị sau khi thay đổi</h1>";
+
+      let products = [
+        {
+          id: 1,
+          name: "Product 1",
+          price: 10,
+        },
+        {
+          id: 2,
+          name: "Product 2",
+          price: 10,
+        },
+        {
+          name: "Product 3",
+          price: 10,
+        },
+        {
+          name: "Product 4",
+          price: 10,
+        },
+        {
+          name: "Product 5",
+          price: 10,
+        },
+        {
+          name: "Product 6",
+          price: 10,
+        },
+      ];
+
+      let container = document.getElementById("container"); // Chỉ trả về 1 thẻ duy nhất thỏa mãn điêu kiện
+
+      for (let i = 0; i < products.length; i++) {
+        container.innerHTML += `<div class="item">Sản phẩm ${products[i].name} có giá ${products[i].price} </div>
+          `;
+      }
+
+      // style
+      //   container.style.backgroundColor = "green"
+      //   container.style.fontSize = "16px"
+
+      // Event
+      const buttonSay = document.querySelector("button.say");
+      buttonSay.onclick = function () {
+        alert("Hello Mindx"); // in ra Hello MindX khi bấm vào nút
+      };
+
+      const username = document.getElementById("username");
+
+      username.onclick = () => {
+        console.log("Giá trị in ra cho onClick 1");
+      };
+
+      username.onclick = () => {
+        console.log("Giá trị in ra cho onClick 2");
+      };
+
+      username.addEventListener("click", () => {
+        console.log("Giá trị in ra cho addEventListener 1");
+      });
+
+      username.addEventListener("click", () => {
+        console.log("Giá trị in ra cho addEventListener 2");
+      });
+      //   username.onchange = (e) => {
+      //     // Hàm này được gọi khi sự kiện onchange xảy ra => onchange truyền 1 thứ gì đó vào cho bước tiếp theo (callback)
+      //     console.log(e.target.value);
+      //   };
+
+      // => Tìm 1 phần tử trong 1 mảng cho trước
+
+      //   [
+      //     {
+      //       username: "",
+      //       password: "",
+      //     },
+      //     {
+      //       username: "",
+      //       password: "",
+      //     },
+      //   ];
+
+      let items = document.getElementsByClassName("item");
+      let cart = [];
+      for (let i = 0; i < items.length; i++) {
+        items[i].style.cursor = "pointer";
+
+        items[i].addEventListener("click", () => {
+          cart.push(items[i]);
+
+          console.log(cart);
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // Câu 1
+      let cart = [];
+      const addToCart = (item) => {
+        cart.push(item);
+      };
+
+      // Câu 2
+      const tinhBinhPhuong = (number) => {
+        return Math.pow(number, 2); // 2 ^ 2, 3 ^ 2
+      };
+
+      // Câu 3
+      const filterEvenNumber = (numbers) => {
+        return numbers.filter((number) => number % 2 == 0);
+      };
+
+      // Câu 4
+      const findSatisfiedStudent = (studentScores, satisfiedScore) => {
+        return studentScores.find((record) => record.score >= satisfiedScore);
+      };
+
+      // Câu 6
+      let arr = ["a", "b", "c", "d", "e"];
+      arr.splice(3, 1, "f"); // ['a', 'b', 'c', 'f', 'e']
+
+      // Câu 10
+      const originArr = [1, 2, 3];
+      const resultArr = [6, ...originArr, 4, 5];
+
+      // Câu 11
+      const obj1 = { name: "Alice", age: 25 };
+      const obj2 = { job: "Developer" };
+      let resultObj = {
+        ...obj1,
+        ...obj2,
+      };
+
+      // Câu 13
+      let arr13 = [1, 2, 3, 4, 5, 6, 8, 10, 12, 14, 16];
+
+      let result = arr13
+        .filter((number) => number % 2 == 0)
+        .reduce((previousValue, currentValue) => {
+          return previousValue * currentValue;
+        }, 1);
+
+      console.log(result);
+    </script>
+  </body>
+</html>
