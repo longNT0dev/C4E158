@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <h1 class="titleH1">This is content</h1>
+
+    <button class="btnClick">Click</button> -->
+
+    <!-- <input type="text" id="content" />
+    <button onclick="showContent()">Add</button><br>
+    <input type="checkbox" />
+    <span id="content-area"></span> -->
+    <input type="text" id="content" />
+    <button onclick="showContent()">Add</button>
+    <div id="container"></div>
+
+    <script>
+      // Câu 3
+      //   let h1Tag = document.getElementsByClassName("titleH1");
+      //   let btn = document.getElementsByClassName("btnClick");
+      //   let isClicked = false;
+      //   btn[0].addEventListener("click", () => {
+      //     if (!isClicked) {
+      //       // true
+      //       h1Tag[0].innerText = "Đây là nội dung";
+      //       h1Tag[0].style.color = "red";
+      //       h1Tag[0].style.backgroundColor = "blue";
+
+      //       isClicked = true;
+      //     } else {
+      //       h1Tag[0].innerText = "This is content";
+      //       h1Tag[0].style.color = "black";
+      //       h1Tag[0].style.backgroundColor = "white";
+
+      //       isClicked = false;
+      //     }
+      //   });
+
+      // Câu 4
+      // Kiểm tra localStorage có lưu mảng dữ liệu chưa, nếu có thì lấy ra để thao tác, còn nếu chưa thì khởi tạo
+      let products;
+      if (!localStorage.carts) {
+        products = [];
+        localStorage.carts = JSON.stringify(products);
+      } else {
+        products = JSON.parse(localStorage.carts);
+      }
+
+      let container = document.getElementById("container");
+      const renderProduct = () => {
+        container.innerHTML = "";
+        for (let i = 0; i < products.length; i++) {
+          container.innerHTML += `<div>${products[i]}</div>`;
+        }
+      };
+
+      renderProduct();
+
+      const showContent = () => {
+        let input = document.getElementById("content");
+
+        products.push(input.value);
+
+        // Gán lại giá trị sau khi thay đổi vào localStorage
+        localStorage.carts = JSON.stringify(products)
+
+        renderProduct();
+      };
+
+      // Câu 5
+    </script>
+  </body>
+</html>
